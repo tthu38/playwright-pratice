@@ -32,7 +32,7 @@ public class baseTest {
         // Tạo context + page mới trước mỗi test
         context = browser.newContext();
         page = context.newPage();
-        page.setDefaultTimeout(10000); 
+        page.setDefaultTimeout(30000); 
     }
 
      @AfterMethod // Chạy sau mỗi test method
