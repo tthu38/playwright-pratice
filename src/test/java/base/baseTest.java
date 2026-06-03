@@ -23,7 +23,7 @@ public class baseTest {
         // Khởi tạo Playwright + Browser
         playwright = Playwright.create();
         browser = playwright.chromium().launch(
-            new BrowserType.LaunchOptions().setHeadless(false)
+            new BrowserType.LaunchOptions().setHeadless(true)
         );
     }
 
