@@ -30,7 +30,7 @@ jobs:
         run: mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install chromium"
 
       - name: Run tests
-        run: mvn test -Dplaywright.timeout=30000
+        run: mvn test
 
       - name: Generate Allure Report
         if: always()
