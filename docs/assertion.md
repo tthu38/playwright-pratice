@@ -1,0 +1,21 @@
+DOM : cấu trúc HTML của trang web , tất cả element mà broswer đang giữ trong bộ nhớ, dù ẩn hay hiện đều ở trong DOM
+
+- isAttached() : verify element tồn tại trong DOM kể cả khi đang ẩn
+- isVisible()  : phải thấy được trên trang
+- isChecked() verify trạng thái tick của checkbox hoặc radio button. Dùng sau check() để confirm đã tick, hoặc not().isChecked() để verify chưa tick.
+- isDisabled() element bị vô hiệu hóa, verify không thaO tác được. Kiểm tra có DÙNG được không
+- isHidden() kiểm tra có THẤY được không 
+- isEditable() — verify element có thể chỉnh sửa/nhập liệu được không!
+- isEmpty() — verify element không có nội dung bên trong!
+- isenabled - element hoạt động bình thường, có thể tương tác được 
+- isFocused() — verify element đang được focus (con trỏ đang ở trong element đó)
+- isHiddent verify element đang ẩn không thấy được 
+- isInViewport() — verify element có đang nằm trong vùng nhìn thấy của màn hình không
+- containsClass() verify element có chứa CSS class cụ thể không. Ví dụ: sau khi click tab Login, verify tab đó có class 'active' không.
+- containsText() — verify element có chứa chuỗi text cụ thể không — partial match!
+- hasAccessibleName() verify tên chính của element — lấy từ aria-label, text content, placeholder. 
+- hasAccessibleDescription() verify mô tả thêm — lấy từ aria-describedby hoặc title. Screen reader đọc Name trước rồi mới đọc Description. Name bắt buộc phải có, Description là optional.
+- hasAttribute() — verify element có attribute với giá trị cụ thể không!
+- hasClass() — verify element có đúng class k
+- hasCount() — verify số lượng element match locator
+- hasCSS() — verify element có CSS property với value cụ thể (dùng rgb, k dùng # được)

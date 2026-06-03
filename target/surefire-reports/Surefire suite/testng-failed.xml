@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="tests.SignUpTest">
+        <methods>
+          <include name="closeContext"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="signUpWithInvalidMobile"/>
+          <include name="signUpWithExistingEmail"/>
+          <include name="initPage"/>
+          <include name="signUpWithPhonethan10Digits"/>
+          <include name="createContext"/>
+          <include name="signUpWithEmptyMobile"/>
+          <include name="signUpWithInvalidEmail"/>
+          <include name="signUpWithEmptyAddress"/>
+          <include name="signUpWithEmptyName"/>
+          <include name="signUpWithEmptyPassword"/>
+          <include name="signUpWithEmptyLastName"/>
+        </methods>
+      </class> <!-- tests.SignUpTest -->
+      <class name="tests.SearchTest">
+        <methods>
+          <include name="closeContext"/>
+          <include name="initPage"/>
+          <include name="createContext"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="searchSpecialCharacters"/>
+        </methods>
+      </class> <!-- tests.SearchTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
